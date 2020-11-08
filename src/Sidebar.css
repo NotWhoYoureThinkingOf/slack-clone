@@ -1,0 +1,68 @@
+.sidebar{
+  background-color: var(--slack-color);
+  border-top: 1px solid #49274b;
+  max-width:260px;
+  min-width:185px;
+  height:100%;
+  color:white;
+  flex:0.3;
+  z-index:50;
+}
+
+.sidebar__header{
+  display:flex;
+  border-bottom: 1px solid #49274b;
+  padding-bottom: 10px;
+  padding: 13px;
+}
+
+.sidebar__header > .MuiSvgIcon-root{
+  padding: 8px;
+  color: #49274b;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 999px;;
+}
+
+.sidebar__info {
+  flex:1;
+}
+
+.sidebar__info > h2{
+  font-size:15px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.sidebar__info > h3{
+  display:flex;
+  align-items: center;
+  font-size:13px;
+  font-weight:400;
+}
+
+.sidebar__info > h3 > .MuiSvgIcon-root{
+  font-size:14px;
+  margin-top:-5px;
+  margin-right: 2px;
+  color:green;
+}
+
+.sidebar > hr {
+  margin-top:10px;
+  margin-bottom: 10px;
+  border: 1px solid #49274b
+}
+
+@media only screen and (max-width:600px){
+  .sidebar{
+    position:absolute;
+    left:-100%;
+    transition: all 0.3 ease-in;
+    height:100vh;
+  }
+
+  .sidebar__header > .MuiSvgIcon-root{
+    display:none;
+  }
+}

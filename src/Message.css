@@ -1,0 +1,44 @@
+.message{
+  display:flex;
+  align-items:center;
+  padding:20px;
+}
+
+.message > img {
+  height: 50px;
+  width:50px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.message__info{
+  padding-left: 10px;
+}
+
+.message__info > h4{
+  margin-bottom: 3px;
+}
+
+.message__timestamp{
+  color:gray;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+@media only screen and (max-width:600px){
+  .message{
+    display:flex;
+    align-items:center;
+    padding: 12px 20px;
+  }
+
+  .message__info{
+    font-size: .85rem;
+  }
+
+  .message__timestamp{
+    color:gray;
+    font-weight: 300;
+    font-size: .7rem;
+  }
+}

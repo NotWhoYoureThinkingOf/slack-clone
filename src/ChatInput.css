@@ -1,0 +1,63 @@
+.chatInput{
+  border-radius:20px;
+}
+
+.chatInput > form{
+  position: relative;
+  display:flex;
+  justify-content: center;
+}
+
+.chatInput > form > input{
+  position: fixed;
+  bottom: 30px;
+  width:60%;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding:20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.chatInput > form > button{
+  display:none;
+}
+
+@media only screen and (max-width:600px){
+  .chatInput{
+    border-radius: 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 40;
+    padding: 20px 0;
+    background: white;
+  }
+
+
+  .chatInput > form > input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    bottom: auto;
+    width:50%;
+    margin-right: 3px;
+    height: fit-content;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding:10px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .chatInput > form > button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display:block;
+    width:15%;
+    text-transform:capitalize;
+    outline:none;
+    border:1px solid rgba(0,0,0,.5);
+    border-radius:3px;
+  }
+}
